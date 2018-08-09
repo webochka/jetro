@@ -1,0 +1,103 @@
+.aside
+	width: 220px
+	position: sticky
+	top: 3%
+	+helvetica-font
+	font-size: 12px 
+	color: #464646
+
+	+r(860)
+		margin-left: 10px
+
+	+r(660)
+		width: 100%
+		position: static
+		margin-left: 0px
+	
+.small__title
+	padding-bottom: 7.8%
+	display: flex
+	align-items: center
+
+	+bebas-font
+	font-size: 14px
+	text-transform: uppercase
+	color: #e8603c
+	white-space: nowrap
+
+	+r(660)
+		display: block
+		padding-bottom: 2%
+
+	&:after
+		+line-pseudo
+		margin-left: 17px
+		margin-top: 2px
+
+		+r(660)
+			display: none
+
+
+.additional__content
+	padding-bottom: 16%
+
+	+r(660)
+		padding-bottom: 4%
+			
+.categories
+
+	&__link
+		color: #464646
+
+		&:hover
+			text-decoration: underline
+
+	&__count
+		display: inline-block
+
+	+r(660)
+		text-align: right
+		display: inline-block
+		width: 49%
+
+	+r(380)
+		width: 100%
+		text-align: left
+
+.gallery
+	&__block
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+	&__photo
+		width: 50px
+		height: 50px
+		margin-bottom: 5px
+		background: #f3af9d
+		border: 1px solid #e8603c
+
+		+r(660)
+			margin: 3px
+		
+	&__img 
+		width: 100%
+		overflow: hidden
+
+	+r(660)
+		&:after
+			+line-pseudo
+			margin: 7% 0 1%
+
+.about 
+	+r(660)
+		display: inline-block
+		width: 49%
+		text-align: left
+		vertical-align: top
+
+	+r(380)
+		width: 100%
+
+
+		

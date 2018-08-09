@@ -1,0 +1,123 @@
+.container
+	max-width: 940px
+	margin: 0 auto
+
+	+r(960)
+		padding: 0 20px
+
+.header__content
+	padding: 22px 0
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.nav
+	+r(570)
+		+menu-adaptiv
+		left: -100%
+		width: 0
+		
+	
+		&--is-visible
+			+menu-adaptiv
+			position: fixed
+			left: 0
+			right: 0
+			width: 100%
+			
+
+	&__link
+		padding-left: 23px
+		+bebas-font
+		font-size: 16px
+		text-transform: uppercase
+		color: #b9b9b9
+		text-decoration: none
+		&:hover
+			color: #e8603c
+
+		+r(570)
+			display: block
+			padding: 10px 23px
+			color: #ffffff
+			font-size: 20px
+			&:hover, &:active
+				color: #ffffff
+
+		&--is-active
+			color: #e8603c
+
+.nav-button
+	display: none
+	
+	+r(570)
+		display: flex
+		flex-direction: column
+		cursor: pointer
+
+	&__line
+		width: 35px
+		height: 4px
+		border-radius: 4px
+		margin-bottom: 5px
+		background:  #e8603c
+
+		&-center
+			transform: translate(0px)
+			transition: transform 1s
+
+			&--close
+				transform: translate(8px)
+				transition: transform 1s
+		
+.headline
+	background: transparentize(#e8603c, 0.5)
+
+	+r(1000)
+		background: #e8603c
+
+	&__text
+		position: relative
+		padding: 14px 16px 
+		background: #e8603c
+		+bebas-font
+		font-size: 24px 
+		color: #ffffff
+
+		&:before
+			+headline-pseudo
+			left: 100%
+			top: 0
+			
+		&:after
+			+headline-pseudo
+			right: 100%
+			top: 0
+
+		+r(1000)
+			padding-left: 0
+
+			&:before, &:after
+				display: none
+
+.body-overflow
+	overflow: hidden
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
